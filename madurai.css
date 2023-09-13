@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   
+  background-size: cover;
+background-color: rgb(143, 248, 169);
+  
+}
+
+
+.rating{
+  color: rgb(253, 180, 42);
+  
+}
+.land{
+  width: 90%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+justify-content: center;
+border: 5px solid black;
+box-shadow: 10px 10px black;
+background-color: greenyellow;
+}
+.map{
+  text-decoration: none;
+  list-style: none;
+  color: rgb(252, 251, 251);
+}
+.map:hover{
+  color: rgb(13, 14, 13);
+}
+
+
+.shake:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.chat {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #949496;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.chat:hover,
+.chat:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.chat:active {
+  background: var(--color);
+  color: #fff;
+}

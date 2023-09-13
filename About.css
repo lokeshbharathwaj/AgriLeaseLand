@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-image: url("img/");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-color:rgb(250, 248, 248);
+  background-attachment: fixed;
+  color: rgb(10, 10, 10);
+  
+}
